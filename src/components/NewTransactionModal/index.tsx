@@ -61,14 +61,14 @@ export function NewTransactionModal({ isOpen, onRequestClose }: NewTransactionMo
                 <input 
                     placeholder="Titulo"
                     value={title}
-                    onChange={event => setTitle(event.target.value)}
+                    onChange={(event) => setTitle(event.target.value)}
                 />
 
                 <input 
                     type="number"
                     placeholder="Valor"
                     value={amount}
-                    onChange={event => setAmount(Number(event.target.value))}
+                    onChange={(event) => setAmount(Number(event.target.value))}
                 />
 
                 <TransactionTypeContainer> 
@@ -98,7 +98,7 @@ export function NewTransactionModal({ isOpen, onRequestClose }: NewTransactionMo
                 <input 
                     placeholder="Categoria"
                     value={category}
-                    onChange={event => setCategory(event.target.value)}
+                    onChange={(event) => setCategory(event.target.value)}
                 />
 
                 <button type="submit">
@@ -110,3 +110,4 @@ export function NewTransactionModal({ isOpen, onRequestClose }: NewTransactionMo
             </Modal>
     );
 }
+ 
